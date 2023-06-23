@@ -36,9 +36,22 @@
     </div>
   </section>
 
+  <section class='m-5 card'>
+    <div class='card-header'>Завдання 5</div>
+    <div class='card-body'>
+      <div>
+        <p id='blue' style='color: blue;'>Синій колір</p>
+      </div>
+    </div>
+  </section>
+
   {{! Завдання 6. Зробіть, щоб тег p мав червоний фон ,а тег div мав зелений фон  }}
   {{! Тут вам потрібно використовувати Селектор нащадка }}
-
+<style>
+  .box > div {
+    background-color: green;
+  }
+</style>
   <section class='m-5 card'>
     <div class='card-header'>Завдання 6</div>
     <div class='card-body'>
@@ -54,9 +67,15 @@
       </div>
     </div>
   </section>
-
-  {{! Завдання 7. Задайте класу brown коричневий фон та білий колір тексту, використовуйте селектор класу  }}
-
+  
+  User
+{{! Завдання 7. Задайте класу brown коричневий фон та білий колір тексту, використовуйте селектор класу  }}
+<style>
+ .brown {
+    background-color: brown;
+    color: white;
+  } 
+</style>
   <section class='m-5 card'>
     <div class='card-header'>Завдання 7</div>
     <div class='card-body'>
@@ -68,8 +87,30 @@
     </div>
   </section>
 
+
+Будь ласка, помітьте, що код CSS розміщується внутрішньо у відповідних тегах <style>...</style>.
+
   {{! Завдання 8. Зробіть червоний фон для дочірніх елементів тега ul }}
   {{! Використовуйте селектор для позначення дочірних елементів ( parent_tag > children_tag ) }}
+
+  <section class='m-5 card'>
+    <div class='card-header'>Завдання 8</div>
+    <div class='card-body'>
+      <div>
+        <ul>
+          <li>Елемент 1</li>
+          <li>Елемент 2</li>
+          <li>Елемент 3</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    ul > li {
+      background-color: red;
+    }
+  </style>
 
   <section class='m-5 card'>
     <div class='card-header'>Завдання 8</div>
@@ -99,6 +140,24 @@
     </div>
   </section>
 
+  <style>
+    .header-button ~ * {
+      background-color: red;
+    }
+  </style>
+
+  <section class='m-5 card'>
+    <div class='card-header'>Завдання 9</div>
+    <div class='card-body'>
+      <div>
+        <header>
+          <button class='header-button'>Click</button>
+          <span>Logo</span>
+        </header>
+      </div>
+    </div>
+  </section>
+
   <!--  Завдання 10. Зробіть синій фон для всіх cусідських тегів <p>, тегу який має клас 'susid' , а текст білим застосувавши сусідський селектор  -->
 
   <section class='m-5 card'>
@@ -113,7 +172,44 @@
     </div>
   </section>
 
+  <style>
+    .susid + p {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+
+  <section class='m-5 card'>
+    <div class='card-header'>Завдання 10</div>
+    <div class='card-body'>
+      <div>
+        <p class='susid'>Article</p>
+        <p>Article</p>
+        <p>Article</p>
+        <p>Article</p>
+      </div>
+    </div>
+  </section>
+
   <!--  Завдання 11. Зробіть жовтий  фон  для класу .salo та індетифікатора #bread   -->
+
+  <section class='m-5 card'>
+    <div class='card-header'>Завдання 11</div>
+    <div class='card-body'>
+      <div>
+        <p class='salo'>Salo</p>
+        <p id='bread'>Bread</p>
+        <p>Article</p>
+        <p>Article</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .salo, #bread {
+      background-color: yellow;
+    }
+  </style>
 
   <section class='m-5 card'>
     <div class='card-header'>Завдання 11</div>
